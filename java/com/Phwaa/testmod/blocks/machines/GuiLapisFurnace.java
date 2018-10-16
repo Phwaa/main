@@ -13,9 +13,9 @@ public class GuiLapisFurnace extends GuiContainer
 	private final InventoryPlayer player;
 	private final TileEntityLapisFurnace tileentity;
 	
-	public GuiLapisFurnace(InventoryPlayer player, TileEntityLapisFurnace tilentity)
+	public GuiLapisFurnace(InventoryPlayer player, TileEntityLapisFurnace tileentity)
 	{
-		super(new ContainerLapisFurnace(player, tilentity));
+		super(new ContainerLapisFurnace(player, tileentity));
 		this.player  = player;
 		this.tileentity = tileentity;
 	}

@@ -111,7 +111,7 @@ public class TileEntityLapisFurnace extends TileEntity implements IInventory, IT
 	}
 	
 	@Override
-	public void readFromNBT(NBTTagCompound compund)
+	public void readFromNBT(NBTTagCompound compound)
 	{
 		super.readFromNBT(compound);
 		this.inventory = NonNullList.<ItemStack>withSize(this.getSizeInventory(), ItemStack.EMPTY);
@@ -278,7 +278,7 @@ public class TileEntityLapisFurnace extends TileEntity implements IInventory, IT
 			if (item == Items.STICK) return 100;
 			if (item == Items.COAL) return 1600;
 			if (item == Items.LAVA_BUCKET) return 20000;
-			if (item == Items.getItemFromBlock(Blocks.SAPLING)) return 100;
+			if (item == Item.getItemFromBlock(Blocks.SAPLING)) return 100;
 			if (item == Items.BLAZE_ROD) return 2400;
 			
 			return GameRegistry.getFuelValue(fuel);
@@ -330,36 +330,4 @@ public class TileEntityLapisFurnace extends TileEntity implements IInventory, IT
 			this.totalCookTime = value;
 		}
 	}
-
-	@Override
-	public void openInventory(EntityPlayer player) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void closeInventory(EntityPlayer player) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public boolean isItemValidForSlot(int index, ItemStack stack) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public int getFieldCount() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public void clear() {
-		// TODO Auto-generated method stub
-		
-	}
-	
-	
 }
