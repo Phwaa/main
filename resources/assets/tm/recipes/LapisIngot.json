@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " # ",
+        "#I#",
+        " # "
+    ],
+    
+    "key":
+    {
+        "#":
+        {
+            "item": "minecraft:lapis_block"
+        },
+    
+        "I":
+        {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    
+    "result":
+    {
+        "item": "tm:lapis_ingot",
+        "count": 1
+    }
+}

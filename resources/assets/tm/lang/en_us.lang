@@ -1,0 +1,14 @@
+//Containers
+container.lapis_furnace=Lapis Furnace
+
+//Items
+item.lapis_ingot.name=Lapis Ingot
+item.laprillium_ingot.name=Laprillium Ingot
+
+
+//Blocks
+tile.lapis_ingot_block.name=Lapis Ingot Block
+tile.laprillium_block.name=Laprillium Block
+tile.lapis_furnace.name=Lapis Furnace
+
+//Tools
